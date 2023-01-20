@@ -1,6 +1,5 @@
 package com.example.coindex.presentation
 
-import androidx.appcompat.app.AppCompatActivity
 import androidx.activity.ComponentActivity
 import android.os.Bundle
 import androidx.activity.compose.setContent
@@ -16,6 +15,8 @@ import com.example.coindex.presentation.ui.theme.CoinDexTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
+
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
