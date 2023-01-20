@@ -1,7 +1,6 @@
 package com.example.coindex.presentation.coin_list
 
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.BoxScopeInstance.align
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -38,8 +37,9 @@ fun CoinListScreen(
                     }
                 )
             }
-        } // end lazy column
-        if(state.error.isNotBlank()){
+        }
+
+        if (state.error.isNotBlank()){
             Text(
                 text = state.error,
                 color = MaterialTheme.colors.error,
@@ -51,10 +51,8 @@ fun CoinListScreen(
             )
         }
 
-        if(state.isLoading){
+        if (state.isLoading){
             CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
         }
     }
-
-
 }
