@@ -30,5 +30,4 @@ object AppModule {
     fun provideCoinRepository(api: CoinApi) : CoinRepository {
         return CoinRepositoryImpl(api)
     }
-
 }
