@@ -4,6 +4,7 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
+import com.example.coindex.common.Constants
 import com.example.coindex.common.Constants.COIN_ID
 import com.example.coindex.common.Resource
 import com.example.coindex.domain.use_case.get_coin.GetCoin
@@ -20,7 +21,7 @@ class CoinInfoViewModel @Inject constructor (
     val state: State<CoinInfoState> = _state
 
     init {
-        savedStateHandle.get<String>(COIN_ID)?.let{coinId ->
+        savedStateHandle.get<String>(Constants.COIN_ID)?.let{ coinId ->
             getCoin(coinId)
         }
     }
