@@ -25,12 +25,10 @@ fun CoinListItem(
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .clickable(
-                onClick = { onItemClick(coin) }
-            )
-            .padding(16.dp),
+            .clickable { onItemClick(coin) }
+            .padding(20.dp),
         horizontalArrangement = Arrangement.SpaceBetween
-    ){
+    ) {
         Text(
             text = "${coin.rank}. ${coin.name} (${coin.symbol})",
             style = MaterialTheme.typography.body1,

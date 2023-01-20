@@ -7,7 +7,7 @@ import com.example.coindex.domain.repository.CoinRepository
 import javax.inject.Inject
 
 class CoinRepositoryImpl @Inject constructor(
-    private val coinApi: CoinApi,
+    private val coinApi: CoinApi
 ) : CoinRepository {
     override suspend fun getCoins(): List<CoinDto> {
         return coinApi.getCoins()

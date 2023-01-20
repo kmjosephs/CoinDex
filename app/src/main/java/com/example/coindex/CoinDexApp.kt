@@ -1,4 +1,7 @@
 package com.example.coindex
 
-class CoinDexApp {
-}
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+ class CoinDexApp : Application()

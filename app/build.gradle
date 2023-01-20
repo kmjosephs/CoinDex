@@ -43,6 +43,9 @@ android {
         kotlinCompilerVersion '1.5.21'
     }
     namespace 'com.example.coindex'
+    lintOptions {
+        disable "Instantiatable"
+    }
 }
 
 dependencies {
