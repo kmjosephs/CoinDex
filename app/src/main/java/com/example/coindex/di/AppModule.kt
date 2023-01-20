@@ -19,4 +19,5 @@ object AppModule {
             .build()
             .create(CoinApi::class.java)
     }
+
 }
