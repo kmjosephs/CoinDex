@@ -10,15 +10,15 @@ This project used the following technologies:
 - [Hilt](https://dagger.dev/hilt/)
 - [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html)
 - [CoinPaprika API](https://api.coinpaprika.com/)
-- -[Junit](https://junit.org/junit5/)
+- [Junit](https://junit.org/junit5/)
+- [Mockito](https://site.mockito.org/)
 
-The architecture used is CLEAN Architecture and divided into 4 layers: 
+The architecture used is CLEAN Architecture and divided into 3 layers: 
 - data
-- di (dependency injection)
 - domain
 - presentation
 
-with a separate utils package.
+with a separate utils and di package.
 
 ## Screenshots
 
