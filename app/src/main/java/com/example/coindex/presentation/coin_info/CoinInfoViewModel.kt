@@ -4,11 +4,13 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.coindex.common.Constants
 import com.example.coindex.common.Constants.COIN_ID
 import com.example.coindex.common.Resource
 import com.example.coindex.domain.use_case.get_coin.GetCoin
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
 
@@ -38,6 +40,6 @@ class CoinInfoViewModel @Inject constructor (
                     _state.value = CoinInfoState(isLoading = true)
                 }
             }
-        }
+        }.launchIn(viewModelScope)
     }
 }

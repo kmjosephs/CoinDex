@@ -3,9 +3,11 @@ package com.example.coindex.presentation.coin_list
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.coindex.common.Resource
 import com.example.coindex.domain.use_case.get_coins.GetCoins
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import javax.inject.Inject
 
@@ -32,7 +34,6 @@ class CoinListViewModel @Inject constructor (
                     _state.value = CoinListState(isLoading = true)
                 }
             }
-
-        }
+        }.launchIn(viewModelScope)
     }
 }
