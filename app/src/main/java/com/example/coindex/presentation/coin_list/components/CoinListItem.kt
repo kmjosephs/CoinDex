@@ -36,7 +36,7 @@ fun CoinListItem(
         )
         Text(
             text = if(coin.isActive) "active" else "inactive",
-            color = if(coin.isActive) Color.Green else Color.Red,
+            color = if(coin.isActive) MaterialTheme.colors.primary else Color.Red,
             fontStyle = FontStyle.Italic,
             textAlign = TextAlign.End,
             style = MaterialTheme.typography.body2,

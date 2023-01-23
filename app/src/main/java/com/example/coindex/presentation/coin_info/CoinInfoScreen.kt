@@ -1,5 +1,6 @@
 package com.example.coindex.presentation.coin_info
 
+import android.content.res.Resources.Theme
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -43,7 +44,7 @@ fun CoinInfoScreen(
                         )
                         Text(
                             text = if(coin.isActive) "active" else "inactive",
-                            color = if(coin.isActive) Color.Green else Color.Red,
+                            color = if(coin.isActive) MaterialTheme.colors.primary else Color.Red,
                             fontStyle = FontStyle.Italic,
                             textAlign = TextAlign.End,
                             modifier = Modifier

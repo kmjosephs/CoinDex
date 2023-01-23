@@ -51,16 +51,3 @@ data class CoinInfoDto(
     @SerializedName("whitepaper")
     val whitepaper: Whitepaper
 )
-
-//fun CoinInfoDto.toCoin(): CoinInfo {
-//    return CoinInfo(
-//        description = description,
-//        coinId = id,
-//        isActive = isActive,
-//        name = name,
-//        rank = rank,
-//        symbol = symbol,
-//        tags = tags.map { it.name },
-//        team = team
-//    )
-//}

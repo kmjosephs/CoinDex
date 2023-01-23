@@ -5,9 +5,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.coindex.common.Constants
-import com.example.coindex.common.Constants.COIN_ID
-import com.example.coindex.common.Resource
+import com.example.coindex.utils.Constants
+import com.example.coindex.utils.Resource
 import com.example.coindex.domain.use_case.get_coin.GetCoin
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
