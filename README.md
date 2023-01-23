@@ -11,11 +11,15 @@ This project used the following technologies:
 - [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html)
 - [CoinPaprika API](https://api.coinpaprika.com/)
 
-Architecture is CLEAN architecture. The project is divided into 4 layers: 
--
+The architecture used is CLEAN Architecture and divided into 4 layers: 
 - data
 - di (dependency injection)
 - domain
 - presentation
 
 with a separate utils package.
+
+## Screenshots
+
+![Screenshot 1](Screenshot_1.png)
+![Screenshot 2](Screenshot_2.png)
